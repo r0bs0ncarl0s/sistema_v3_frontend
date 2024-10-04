@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    image: 'frontend_v3:latest'
+    build:
+      context: .
+    container_name: app_frontend_v3
+    ports:
+      - 3000:3000
